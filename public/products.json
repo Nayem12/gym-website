@@ -1,0 +1,56 @@
+[
+    {
+        "id": "63349138274e57fccbff920e",
+        "index": 0,
+        "time": "30",
+        "img": "./images/gym-1.jpg",
+        "age": 20,
+        "name": "Weight Plate",
+        "about": "Fugiat est exercitation officia pariatur amet irure nulla mollit.\r\n"
+    },
+    {
+        "id": "63349138dc9c53ffe36f0120",
+        "index": 1,
+        "time": "35",
+        "img": "./images/gym-2.jpg",
+        "age": 20,
+        "name": "Ejet curl",
+        "about": "Ad nostrud anim in adipisicing. Cupidatat Lorem exercitation veniam sunt occaecat.\r\n"
+    },
+    {
+        "id": "6334913821e8c96432c9be16",
+        "index": 2,
+        "time": "25",
+        "img": "./images/gym-3.jpg",
+        "age": 28,
+        "name": "Dumble",
+        "about": "Sint sint culpa laboris et minim consectetur pariatur dolor nulla anim.\r\n"
+    },
+    {
+        "id": "6334913847c06291c9732a4c",
+        "index": 3,
+        "time": "30",
+        "img": "./images/gym-4.jpg",
+        "age": 25,
+        "name": "Dumble Curl",
+        "about": "Reprehenderit esse sunt elit est dolor voluptate consectetur non.\r\n"
+    },
+    {
+        "id": "633491382d61291a716f108a",
+        "index": 4,
+        "time": "40",
+        "img": "./images/gym-5.jpg",
+        "age": 30,
+        "name": "Shoulder",
+        "about": "Exercitation tempor irure labore voluptate tempor do aute id.\r\n"
+    },
+    {
+        "id": "633491386433d75332269ea5",
+        "index": 5,
+        "time": "45",
+        "img": "./images/gym-6.jpg",
+        "age": 30,
+        "name": "Incline dumbbell",
+        "about": "Elit enim enim cillum tempor fugiat fugiat aliquip do eu.\r\n"
+    }
+]

@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Gym from './Components/Gym/Gym';
 
 function App() {
   return (
     <div className="App">
-      <h1>hlw</h1>
+      <Gym></Gym>
     </div>
   );
 }

@@ -1,0 +1,28 @@
+.gym-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+
+
+}
+
+.title-name {
+    text-align: left;
+}
+
+.section-container {
+    width: 80%;
+    margin: auto;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: auto;
+    margin-top: 120px;
+
+}
+.cart-container{
+    background-color: beige;
+}
