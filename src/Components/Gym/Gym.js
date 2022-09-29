@@ -22,7 +22,7 @@ const Gym = () => {
                 <div className='header-info'>
                     <img src={'https://i.ibb.co/7WQZj5B/logo.jpg'} alt="" />
                     <div><h1 className='title-name'>Achieve-fitness-magic</h1>
-                        <h5>Select today's exercise</h5></div>
+                        <h5>Select your exercise</h5></div>
                 </div>
                 <div className="products-container">
                     {
