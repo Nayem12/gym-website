@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
+import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// toast.configure()
 
 
 const Cart = (props) => {
 
 
     const { cart } = props;
+    const notify = () => toast("Complete you work...");
     let ExerciseTime = 0;
     for (const product of cart) {
         ExerciseTime = ExerciseTime + product.time;
@@ -71,7 +75,8 @@ const Cart = (props) => {
                 <p>Break time: {time ? time : oldBreakTime ? oldBreakTime : 0} seconds</p>
             </div>
             <div>
-                <button className='btn'>Activity Completed</button>
+                <button onClick={notify} className='btn'>Activity Completed</button>
+                <ToastContainer />
             </div>
         </div>
     );
