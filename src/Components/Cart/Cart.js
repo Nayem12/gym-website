@@ -38,15 +38,15 @@ const Cart = (props) => {
             <div className='personal-info'>
                 <div className='persona-details'>
 
-                    <h5>75 <small>kg</small></h5>
+                    <h5>83 <small>kg</small></h5>
                     <small>Weight</small>
                 </div>
                 <div className='persona-details'>
-                    <h5>6.5</h5>
+                    <h5>6.1</h5>
                     <small>Height</small>
                 </div>
                 <div className='persona-details'>
-                    <h5>25 <small>yrs</small></h5>
+                    <h5>2 <small>yrs</small></h5>
                     <small>Age</small>
                 </div>
             </div>
