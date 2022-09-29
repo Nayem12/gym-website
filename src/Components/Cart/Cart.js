@@ -2,16 +2,10 @@ import React from 'react';
 import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
+import Breaktime from '../Breaktime/Breaktime';
 
 const Cart = (props) => {
-    const breaktimes = [
-        { time: 10 },
-        { time: 20 },
-        { time: 30 },
-        { time: 40 },
-        { time: 50 },
 
-    ]
     const { cart } = props;
     let ExerciseTime = 0;
     for (const product of cart) {
@@ -41,9 +35,13 @@ const Cart = (props) => {
             <p>Add A Break</p>
             <div>
                 <div className='breaking-time'>
-                    {
-                        breaktimes.map(breaktime => <Breaktime time={breaktime.time}></Breaktime>)
-                    }
+                    <div className='time-single'>
+                        <button className='button'>40s</button>
+                        <button className='button'>30s</button>
+                        <button className='button'>20s</button>
+                        <button className='button'>50s</button>
+                        <button className='button'>60s</button>
+                    </div>
                 </div>
 
             </div>
@@ -52,20 +50,11 @@ const Cart = (props) => {
                 <p>Exercise time: {ExerciseTime} seconds</p>
             </div>
             <div className='Exercise-time'>
-                <p>Break time</p>
+                <p>Break time: </p>
             </div>
         </div>
     );
 };
-function Breaktime(props) {
-    const buttonadd = () => {
-        console.log('done')
-    }
-    return (
-        <div className='div-button'>
-            <button onClick={buttonadd} className='button'>{props.time}s</button>
-        </div>
-    )
-}
+
 
 export default Cart;

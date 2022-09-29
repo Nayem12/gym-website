@@ -41,3 +41,9 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+
+.time-single {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
