@@ -19,6 +19,23 @@
     padding: 0;
 }
 
+.image-setup {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+
+}
+
+.image-setup img {
+    height: 15%;
+    width: 15%;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+}
+
 .Exercise-time {
     width: 80%;
     margin: auto;
@@ -40,6 +57,8 @@
 .breaking-time {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
 }
 
 .time-single {

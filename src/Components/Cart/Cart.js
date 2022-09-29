@@ -1,25 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
-import Breaktime from '../Breaktime/Breaktime';
+
 
 const Cart = (props) => {
+
 
     const { cart } = props;
     let ExerciseTime = 0;
     for (const product of cart) {
         ExerciseTime = ExerciseTime + product.time;
     }
+    const [time, setTime] = useState('')
+    const getOldTIme = localStorage.getItem('breakTime');
+    const oldBreakTime = JSON.parse(getOldTIme);
+    const handleBreak = (breaks) => {
+        if (oldBreakTime) {
+            setTime(breaks);
+            localStorage.setItem('breakTime', breaks);
+        } else {
+            localStorage.setItem('breakTime', breaks);
+            setTime(breaks);
+        }
+    }
+
     return (
         <div className='cart'>
-            <div>
-                <h3>Nayem Hossain</h3>
-                <p>location <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon></p>
+            <div className='image-setup'>
+                <img src={'https://i.ibb.co/ZhqRZ6G/IMG-20191222-155955.jpg" alt="IMG-20191222-155955'} alt="" />
+                <div>
+                    <h3>Nayem Hossain</h3>
+                    <p>location <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon></p>
+                </div>
 
             </div>
             <div className='personal-info'>
                 <div className='persona-details'>
+
                     <h5>75 <small>kg</small></h5>
                     <small>Weight</small>
                 </div>
@@ -36,11 +54,11 @@ const Cart = (props) => {
             <div>
                 <div className='breaking-time'>
                     <div className='time-single'>
-                        <button className='button'>40s</button>
-                        <button className='button'>30s</button>
-                        <button className='button'>20s</button>
-                        <button className='button'>50s</button>
-                        <button className='button'>60s</button>
+                        <button onClick={() => handleBreak(40)} className='button'>40s</button>
+                        <button onClick={() => handleBreak(30)} className='button'>30s</button>
+                        <button onClick={() => handleBreak(20)} className='button'>20s</button>
+                        <button onClick={() => handleBreak(50)} className='button'>50s</button>
+                        <button onClick={() => handleBreak(60)} className='button'>60s</button>
                     </div>
                 </div>
 
@@ -50,7 +68,7 @@ const Cart = (props) => {
                 <p>Exercise time: {ExerciseTime} seconds</p>
             </div>
             <div className='Exercise-time'>
-                <p>Break time: </p>
+                <p>Break time: {time ? time : oldBreakTime ? oldBreakTime : 0} seconds</p>
             </div>
         </div>
     );

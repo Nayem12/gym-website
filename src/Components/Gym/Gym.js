@@ -19,8 +19,11 @@ const Gym = () => {
     return (
         <div className='gym-container'>
             <div className='section-container'>
-                <h1 className='title-name'>Achieve-fitness-magic</h1>
-                <h5 className='title-name'>Select today's exercise</h5>
+                <div className='header-info'>
+                    <img src={'https://i.ibb.co/7WQZj5B/logo.jpg'} alt="" />
+                    <div><h1 className='title-name'>Achieve-fitness-magic</h1>
+                        <h5>Select today's exercise</h5></div>
+                </div>
                 <div className="products-container">
                     {
                         products.map(product => <Product
