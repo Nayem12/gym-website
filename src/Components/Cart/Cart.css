@@ -1,6 +1,4 @@
-/* .cart {
-    background-color: beige;
-} */
+
 
 .personal-info {
     display: grid;
@@ -15,7 +13,7 @@
 
 .persona-details h5 {
 
-    margin: -05px;
+    margin: -5px;
     padding: 0;
 }
 

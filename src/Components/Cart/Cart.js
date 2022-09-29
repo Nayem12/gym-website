@@ -31,7 +31,7 @@ const Cart = (props) => {
                 <img src={'https://i.ibb.co/ZhqRZ6G/IMG-20191222-155955.jpg" alt="IMG-20191222-155955'} alt="" />
                 <div>
                     <h3>Nayem Hossain</h3>
-                    <p>location <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon></p>
+                    <p> <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon> location: Narayanganj,kanchpur</p>
                 </div>
 
             </div>
