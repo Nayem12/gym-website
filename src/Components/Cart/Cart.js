@@ -70,6 +70,9 @@ const Cart = (props) => {
             <div className='Exercise-time'>
                 <p>Break time: {time ? time : oldBreakTime ? oldBreakTime : 0} seconds</p>
             </div>
+            <div>
+                <button className='btn'>Activity Completed</button>
+            </div>
         </div>
     );
 };
