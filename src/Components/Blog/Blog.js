@@ -11,7 +11,7 @@ const Blog = () => {
                 </div>
                 <div>
                     <h4>Answer:</h4>
-                    <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 'V' denotes the view in MVC. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application. It is maintained by Facebook.</p>
+                    <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 'V' denotes the view in MVC. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application. It is maintained by Facebook</p>
                 </div>
             </div>
             <div className='blog-section'>
